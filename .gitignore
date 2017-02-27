@@ -1,0 +1,13 @@
+ClickCounter
+clickcounter_plugin_import.cpp
+debug/
+Makefile
+Makefile.Debug
+Makefile.Release
+.qmake.stash
+release/
+ui_*.h
+*~
+*.o
+*.user
+*.zip
