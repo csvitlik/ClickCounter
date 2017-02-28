@@ -17,3 +17,7 @@ I can click as quickly as 151 ms (1000/151 = 6.6 Hz).
 
     $ qmake
     $ make
+
+# Screenshot
+
+![ClickCounter screenshot](screenshot.png)
