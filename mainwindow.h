@@ -29,6 +29,7 @@ private slots:
 private:
     QElapsedTimer timer;
     Ui::MainWindow* ui;
+    double fastest = 0; // 0 Hz
 };
 
 #endif // MAINWINDOW_H

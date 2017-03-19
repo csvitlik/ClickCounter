@@ -49,6 +49,13 @@ void
 MainWindow::on_pushButton_clicked ()
 {
     qint64 val = timer.restart ();
-    ui->textBrowser->setText (QString::number (val) + " ms");
-    ui->textBrowser->append (" (" + QString::number ( (double) 1000 / val) + " Hz)");
+    double rate = (double)1000 / val;
+
+    if (rate > fastest)
+    {
+        ui->statusBar->showMessage ("Record: " + QString::number (rate) + " Hz");
+        fastest = rate;
+    }
+
+    ui->textBrowser->setText (QString::number (val) + " ms (" + QString::number (rate) + " Hz)");
 }
